@@ -1,6 +1,6 @@
 // NOVA SCAO v2.9 - GitHub Pages. Solo cachea archivos del mismo sitio.
 // Las solicitudes a Supabase nunca son interceptadas ni cacheadas.
-const CACHE = 'nova-scao-v3-0-login-corporativo';
+const CACHE = 'nova-scao-v3-1-estados-servidor';
 const SHELL = ['./index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)));

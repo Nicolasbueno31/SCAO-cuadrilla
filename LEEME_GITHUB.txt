@@ -1,0 +1,9 @@
+NOVA SCAO v3.1 - Repositorio GitHub Pages
+
+Icono conservado: fondo rojo, casco blanco, texto NOVA SCAO.
+
+1. Descomprimir este ZIP.
+2. Subir los archivos de la raiz al repositorio GitHub Pages, sustituyendo los existentes.
+3. Confirmar que index.html, manifest.webmanifest, sw.js, icon-192.png e icon-512.png estan juntos en la raiz.
+4. En Android: abrir la URL publicada con Chrome y usar Instalar aplicacion.
+5. La PWA depende de SQL Supabase y workflow n8n v3.1 configurados y validados; no habilitar automatizaciones sin prueba.
