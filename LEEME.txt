@@ -1,0 +1,10 @@
+NOVA SCAO v3.4 — actualización visual sobre v3.3.
+
+Cambios: colores corporativos uniformes, botones principales y auxiliares, navegación, tarjetas, campos y controles táctiles.
+Sin cambios en JavaScript de aplicación, autenticación, permisos administrativos, borrado, Supabase ni integración n8n.
+
+Para GitHub Pages: subir los archivos de esta carpeta a la raíz del repositorio, reemplazando versiones previas y conservando los demás archivos ajenos a este paquete. No subir secretos SQL ni claves privadas.
+
+El service worker tiene nombre de caché nuevo para que se actualice la instalación PWA. Si el aspecto no cambia inmediatamente: cerrar la PWA, volver a abrirla conectado a Internet y revisar nuevamente.
+
+Validación: revisión estática de CSS y comprobación de scripts; las pruebas funcionales reales en Android y contra Supabase se deben hacer en el entorno del usuario.
