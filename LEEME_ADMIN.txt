@@ -1,0 +1,29 @@
+NOVA SCAO v3.3 — ELIMINACIÓN DEFINITIVA PARA ADMINISTRADORES
+
+CONTENIDO
+- PWA con inicio directo y mismo icono original rojo con casco.
+- Historial: botón «Eliminar jornada definitivamente» visible solo si el servidor confirma admin.
+- Doble confirmación (Aceptar y escribir ELIMINAR).
+- Borrado real en public.scao_jornadas mediante función de Supabase, sin claves secretas en el HTML.
+- Registro técnico del borrado en public.scao_jornadas_eliminadas para futura actualización del Excel por n8n.
+- Historiales de otros celulares se actualizan al sincronizar.
+
+ORDEN DE INSTALACIÓN
+1. NO ACTUALIZAR AÚN GITHUB. Hacer copia de seguridad de Supabase y del Excel.
+2. En SQL Editor ejecutar SUPABASE_BORRADO_ADMIN_v3_3.sql. No elimina datos existentes.
+3. Abrir AUTORIZAR_ADMIN_EJEMPLO.sql, reemplazar el email de ejemplo por el correo real con el que inicia sesión el administrador en la PWA y ejecutar.
+4. Subir index.html, manifest.webmanifest, sw.js, icon-192.png, icon-512.png, nova-logo-blanco.png y .nojekyll a la raíz del repositorio GitHub Pages. No subir SQL a GitHub público.
+5. Reiniciar la PWA instalada y sincronizar. El administrador verá el botón de borrado en la tarjeta de jornada. Los demás usuarios no.
+6. Probar SOLO con una jornada de prueba y confirmar que desaparece de Supabase y de ambos historiales.
+
+IMPORTANTE — n8n AÚN NO ESTÁ ADAPTADO
+- El borrado elimina la jornada en Supabase de inmediato.
+- El Excel de Ubuntu NO se actualiza automáticamente con esta entrega: hay que modificar el workflow para consultar la tabla de eliminaciones y regenerar el consolidado incluso si ya no quedan jornadas.
+- Los correos enviados permanecen en Outlook.
+- El borrado no es recuperable desde la PWA. Conservar respaldos.
+- No se modificaron las claves ni la configuración del servidor n8n.
+
+SEGURIDAD
+- La validación de administrador y el borrado se realizan en Supabase. Ninguna secret/service_role está en el HTML.
+- Sin ejecutar el SQL o sin asignar el usuario autorizado, NO aparece el botón para eliminar jornadas sincronizadas.
+- No dar permisos de administrador a quienes no deban eliminar registros.

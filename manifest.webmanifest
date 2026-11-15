@@ -1,8 +1,7 @@
 {
   "id": "./",
-  "name": "NOVA SCAO - Servicio Centralizado de Apoyo a Obras",
+  "name": "NOVA SCAO",
   "short_name": "NOVA SCAO",
-  "description": "Registro diario de la cuadrilla SCAO de NOVA Construcciones.",
   "lang": "es-UY",
   "start_url": "./index.html",
   "scope": "./",

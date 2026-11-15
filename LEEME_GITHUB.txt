@@ -1,9 +1,12 @@
-NOVA SCAO v3.1 - Repositorio GitHub Pages
+NOVA SCAO v3.2 - Inicio simplificado
 
-Icono conservado: fondo rojo, casco blanco, texto NOVA SCAO.
+Se conserva intacta la animacion roja NOVA, el casco original y toda la logica de jornadas, Supabase, correo y n8n.
 
-1. Descomprimir este ZIP.
-2. Subir los archivos de la raiz al repositorio GitHub Pages, sustituyendo los existentes.
-3. Confirmar que index.html, manifest.webmanifest, sw.js, icon-192.png e icon-512.png estan juntos en la raiz.
-4. En Android: abrir la URL publicada con Chrome y usar Instalar aplicacion.
-5. La PWA depende de SQL Supabase y workflow n8n v3.1 configurados y validados; no habilitar automatizaciones sin prueba.
+Se acorto el nombre que Android muestra en su pantalla de arranque y se elimino la descripcion larga del manifiesto. Android puede mostrar antes de la animacion una pantalla de inicio del sistema (icono y nombre): no es posible quitarla desde una PWA instalada.
+
+1. Descomprimir y subir los archivos a la raiz del repositorio GitHub Pages.
+2. Confirmar los cambios.
+3. Abrir la web en Chrome y actualizar; si al iniciar desde el icono Android persiste el nombre viejo, desinstalar solo la PWA y volver a instalar desde Chrome (no borrar datos de Chrome sin respaldo).
+4. Comprobar login, historial y los cuatro indicadores.
+
+No se necesita modificar Supabase ni n8n.
